@@ -10,7 +10,7 @@
 
 body {
   display: flex;
-  padding-top: 50px;
+  padding-top: 10px;
   justify-content: center;
   background: #ecf1f5;
   transform: scale(0.9) translateY(-50px);
