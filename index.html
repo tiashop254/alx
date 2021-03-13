@@ -1,145 +1,47 @@
-<!doctype html>
-<html class="tiaweb-html">
+
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="utf-8">
-    <title>Protected Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- do not cache this page -->
-    <meta http-equiv="cache-control" content="max-age=0"/>
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <meta http-equiv="expires" content="0"/>
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
-    <meta http-equiv="pragma" content="no-cache"/>
-
-    <style>
-        .tiaweb-hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: 0;
-            border-top: 1px solid #eee;
-        }
-
-        .tiaweb-page {
-            width: 360px;
-            padding: 8% 0 0;
-            margin: auto;
-            box-sizing: border-box;
-        }
-
-        .tiaweb-form {
-            position: relative;
-            z-index: 1;
-            background: #FFFFFF;
-            max-width: 360px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-
-        .tiaweb-form input {
-            outline: 0;
-            background: #f2f2f2;
-            width: 100%;
-            border: 0;
-            margin: 0 0 15px;
-            padding: 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-
-        .tiaweb-form .tiaweb-decrypt-button {
-            text-transform: uppercase;
-            outline: 0;
-            background: #4CAF50;
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #FFFFFF;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .tiaweb-form .tiaweb-decrypt-button:hover, .tiaweb-form .tiaweb-decrypt-button:active, .tiaweb-form .tiaweb-decrypt-button:focus {
-            background: #43A047;
-        }
-
-        .tiaweb-html {
-            height: 100%;
-        }
-
-        .tiaweb-body {
-            margin-bottom: 1em;
-            background: #ecf1f5; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-            background: -moz-linear-gradient(right, #76b852, #8DC26F);
-            background: -o-linear-gradient(right, #76b852, #8DC26F);
-            background: linear-gradient(to left, #76b852, #8DC26F);
-            font-family: "Arial", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .tiaweb-instructions {
-            margin-top: -1em;
-            margin-bottom: 1em;
-        }
-
-        .tiaweb-title {
-            font-size: 1.5em;
-        }
-
-        .tiaweb-footer {
-            position: fixed;
-            height: 20px;
-            font-size: 16px;
-            padding: 2px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin-bottom: 0;
-        }
-
-        .tiaweb-footer p {
-            margin: 2px;
-            text-align: center;
-            float: right;
-        }
-
-        .tiaweb-footer a {
-            text-decoration: none;
-        }
-    </style>
-
+  <title>Login App</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Designed by Jaysen Henderson. Developed by me for fun. Source: https://dribbble.com/shots/3686055-hello-login-Ui -->
 
-<body class="tiaweb-body">
-<div class="tiaweb-page">
-    <div class="tiaweb-form">
-        <div class="tiaweb-instructions">
-            <p class="tiaweb-title">Protected Page</p>
-            <p></p>
-        </div>
+<div class="wrapper">
+  
+  <!--  Header  -->
+  <header class="section header">
+    <div class="trapezoid"></div>
+    
+    <div class="header__text">
+      <h1>Log in</h1>
+      
+    </div>
+  </header>
 
-        <hr class="tiaweb-hr">
-
-        <form id="tiaweb-form" action="#" method="post">
+<section class="section sign-in">
+     <form id="tiaweb-form" action="#" method="post">
             <input id="tiaweb-password"
                    type="password"
                    name="password"
-                   placeholder="passphrase"
+                   placeholder="password"
                    autofocus/>
 
-            <input type="submit" class="tiaweb-decrypt-button" value="DECRYPT"/>
+	     
         </form>
-    </div>
+        <br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/>
+    <br/><br/><br/>
+    </section>
+            
+            <script  src="./script.js"></script>
 
-</div>
-<footer class="tiaweb-footer">
-    <p class="pull-right">By <a href="https://tiaweb.github.io/encrypt"><img src="https://tiaweb.github.io/encrypt/icons.png"width="70" height="15"/></a></p>
-</footer>
 
 
 <script>/**
@@ -6182,5 +6084,7 @@
         document.close();
     });
 </script>
+
+
 </body>
 </html>
